@@ -12,14 +12,20 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
+  width: 100vw;
+  min-height: 100vh;
   font-size: 0.938rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
   line-height: 1.6;
   font-family: var(--ff-primary);
   font-weight: 400;
-  padding: 3rem 1.5rem;
 }
 
 a {
@@ -33,7 +39,10 @@ a {
 
 p {
   color: var(--clr-neutral-100);
+  min-height: 10rem;
+  max-width: 25rem;
 }
+
 h2 {
   margin: 1rem 0;
   font-family: var(--ff-secondary);
@@ -63,9 +72,18 @@ h2 {
 }
 
 .wrapper {
-  border-radius: 0.8rem;
   overflow: hidden;
+  border-radius: 0.8rem;
+  max-width: 35rem;
 }
 .card {
   padding: 3rem;
+  min-width: 15rem;
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    max-width: 60rem;
+    display: flex;
+  }
 }
