@@ -5,4 +5,23 @@
 
   --clr-neutral-100: hsla(0, 0%, 100%, 0.75);
   --clr-neutral-200: hsl(0, 0%, 95%);
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.938rem;
+  line-height: 1.6;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--ff-secondary);
+  font-weight: 700;
 }
